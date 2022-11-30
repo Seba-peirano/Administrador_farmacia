@@ -13,11 +13,11 @@ class Remedio(models.Model):
     num_comprimidos=models.IntegerField
     vencimiento=models.DateField()
     def __str__(self) -> str:
-        return self.nombre+" "+self.droga+" "+self.num_comprimidos+ " "+self.vencimiento
+        return self.nombre
 
 class Farmaceutico(models.Model):
     nombre=models.CharField(max_length=50)
     num_vendidos=models.IntegerField()
     def __str__(self) -> str:
-        return self.nombre +" "+self.num_vendidos
+        return self.nombre 
 
