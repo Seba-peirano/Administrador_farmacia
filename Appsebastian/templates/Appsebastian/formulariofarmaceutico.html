@@ -1,0 +1,15 @@
+{% extends "Appsebastian/Padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+<!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+<h1>Curso Formulario</h1>
+<form action="{% url 'formulariofarmaceutico' %}" method="POST"> {% csrf_token %}
+    <p> nombre: <input type="text" name="farmaceutico"></p>
+    <p>num_vendidos: <input type="text" name="Numero"></p>
+    <input type="submit"> value="Enviar farmaceutico"
+
+
+
+
+</form>
+{% endblock %}

@@ -15,6 +15,19 @@ def remedio (request):
 def farmaceutico (request):
     return render(request,"Appsebastian/farmaceutico.html")
     
-
+#def formulariofarmaceutico (request):
+ #   if request.method == "Post":
+ #       var1=request.POST["nombre"]
+ #       var2=request.POST["Numero"]
+ #       formulario1=Farmaceutico(nombre=var1,numero=var2)
+ #       formulario1.save()
+ #   return render(request,"Appsebastian/inicio.html")
+def formulariofarmaceutico (request):
+    if request.method == "Post":
+        var1=request.POST["nombre"]
+        var2=request.POST["Numero"]
+        formulario1=Farmaceutico(nombre=var1,numero=var2)
+        formulario1.save()
+        return render(request,"Appsebastian/inicio.html")
 def inicio (request):
     return render(request,"Appsebastian/inicio.html")    
