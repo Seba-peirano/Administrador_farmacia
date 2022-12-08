@@ -1,13 +1,13 @@
 {% extends "Appsebastian/Padre.html" %}
 {% load static %}
 {% block titulo %}
-<h1 class="mb-5">FARMACEUTICOS</h1>
+<h1 class="mb-5">REMEDIOS</h1>
 {% endblock %}
 {% block contenidoQueCambia %}
 <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
-<h1>Ingrese información sobre farmaceuticos</h1>
+<h1>Ingrese remedio</h1>
 
-<form action="{% url 'formulariofarmaceutico' %}" method="POST"> {% csrf_token %}
+<form action="{% url 'formularioremedio' %}" method="POST"> {% csrf_token %}
 
     <table>
 

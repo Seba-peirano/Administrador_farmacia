@@ -2,7 +2,18 @@
 {% load static %}
 {% block contenidoQueCambia %}
 <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
-<h1>Este es el título del Inicio que cambio</h1>
-<p>Se ha heredado todo desde la plantilla padre</p>
-<h3>En el hijo, inicio.html, casí no hay nada :)</h3>
+<h1>INGRESE FABRICANTE</h1>
+
+<form action="{% url 'fabricante' %}" method="POST"> {% csrf_token %}
+
+    <table>
+
+        {{ form.as_table }}
+
+    </table>
+
+    <input type="submit" value="ENVIAR CURSO">
+
+
+</form>
 {% endblock %}

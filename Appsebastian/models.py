@@ -10,7 +10,6 @@ class Fabricante(models.Model):
 class Remedio(models.Model):
     nombre=models.CharField(max_length=50)
     droga=models.CharField(max_length=20)
-    num_comprimidos=models.IntegerField
     vencimiento=models.DateField()
     def __str__(self) -> str:
         return self.nombre

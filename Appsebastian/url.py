@@ -1,9 +1,13 @@
 from django.urls import path
-from Appsebastian import views
+from Appsebastian.views import *
 urlpatterns=[
-path("", views.inicio, name="inicio"),
-path("fabricante", views.fabricante, name="fabricante" ),
-path("remedio", views.remedio, name="remedio" ),
-path("farmaceutico", views.farmaceutico, name="farmaceutico" ),
-path("formulariofarmaceutico", views.formulariofarmaceutico, name="formulariofarmaceutico" ),
+path("", inicio, name="inicio"),
+path("fabricante", fabricante, name="fabricante" ),
+path("remedio", remedio, name="remedio" ),
+path("farmaceutico", farmaceutico, name="farmaceutico" ),
+path("formulariofarmaceutico", formulariofarmaceutico, name="formulariofarmaceutico" ),
+path("formulariofabricante", formulariofabricante, name="formulariofabricante" ),
+path("formularioremedio", formularioremedio, name="formularioremedio" ),
+path("busquedadroga", busquedadroga, name="busquedadroga" ),
+path("buscar/", buscar, name="buscar" ),
 ]
