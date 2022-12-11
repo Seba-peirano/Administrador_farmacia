@@ -81,7 +81,7 @@ def buscar(request):
     if request.GET["droga"]:
         droga= request.GET["droga"]
         nombre= Remedio.objects.filter(droga__icontains=droga)
-        return render(request, "Appsebastian/resultadobusqueda.html", {"nombre":nombre, "droga":droga})
+        return render(request, "Appsebastian/resultadobusqueda.html", {"nombre":nombre})
     else:
         respuesta= "No se enviaron datos"
     return HttpResponse(respuesta)

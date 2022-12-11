@@ -1,0 +1,3 @@
+Cada boton tiene su formulario dentro.
+para ir a buscar una droga de un remedio ir a :
+/Appsebastian/busquedadroga
